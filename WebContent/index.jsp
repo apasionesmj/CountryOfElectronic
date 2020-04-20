@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,8 +8,50 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
+	<div>
+		<a href="index.jsp"> <img id="logo"
+			src="images/Country of Electronic blue.png" width="300" height="90">
+		</a>
+	</div>
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<ul class="navbar-nav">
+					<li class="nav-item active"><a class="nav-link" href="#">MARKET</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">공지사항</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">신고게시판</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">글쓰기</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="nav-item"><a class="nav-link" href="#">회원가입</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">로그인</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div>
+		<form class="form-inline" action="****.do" method="post">
+			<h1>MARKET</h1>
+			<div class="container">
+				<select class="form-control pull-left" name="bd_sellbuy" id="bd_sellbuy">
+					<option value="ALL">전체</option>
+					<option value="SELL">팝니다</option>
+					<option value="BUY">삽니다</option>
+				</select>
+				<input type="text" id="search_input" class="form-control pull-left"
+					placeholder="검색어 입력" name="search" value="">
+				<button type="submit" class="btn btn-dark">검색</button>
+			</div>
+		</form>
+	</div>
+
+
 	<table class="table table-hover">
-		<thead>
+		<thead class="thead-light">
 			<tr>
 				<th>번호</th>
 				<th>제목</th>
@@ -44,16 +86,16 @@
 			</tr>
 		</tbody>
 	</table>
-	<hr/>
-	<div class="text-center">
-		<ul class="pagination">
-			<li><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
+	<hr />
+	<nav aria-label="Page navigation">
+		<ul class="pagination justify-content-center">
+			<li class="page-item"><a class="page-link" href="#">이전 페이지</a></li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">다음 페이지</a></li>
 		</ul>
-	</div>
+	</nav>
 
 
 	<script
