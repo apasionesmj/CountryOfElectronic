@@ -27,7 +27,16 @@
 			<div>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="nav-item"><a class="nav-link" href="#">회원가입</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">로그인</a></li>
+					<!-- <div class="dropdown event-dropdown"> -->
+					<li>
+						<a href="#"	class="nav-link dropdown-toggle" data-toggle="dropdown">로그인 <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+								<li><input type="text" placeholder="ID"></li>
+								<li><input type="text" placeholder="Password"></li>
+								<button type="submit" class="btn btn-dark">로그인</button>
+							</ul>
+							</li>
+					<!-- </div> -->
 				</ul>
 			</div>
 		</div>
@@ -36,13 +45,14 @@
 	<div>
 		<form class="form-inline" action="****.do" method="post">
 			<h1>MARKET</h1>
-			<div class="container">
-				<select class="form-control pull-left" name="bd_sellbuy" id="bd_sellbuy">
+			<div class="container"
+				style="display: inline-block; text-align: right;">
+				<select class="form-control pull-left" name="bd_sellbuy"
+					id="bd_sellbuy">
 					<option value="ALL">전체</option>
 					<option value="SELL">팝니다</option>
 					<option value="BUY">삽니다</option>
-				</select>
-				<input type="text" id="search_input" class="form-control pull-left"
+				</select> <input type="text" id="search_input" class="form-control pull-left"
 					placeholder="검색어 입력" name="search" value="">
 				<button type="submit" class="btn btn-dark">검색</button>
 			</div>
@@ -97,7 +107,17 @@
 		</ul>
 	</nav>
 
-
+	<footer>
+		<div>
+			<form class="form-inlie">
+				<h3 class="text-secondary">
+					전자나라 <a><img src="images/Country of Electronic blue.png"
+						width="180" height="60" align="right"></a> <br>
+					<h5 class="text-secondary">서울특별시 강남구</h5>
+				</h3>
+			</form>
+		</div>
+	</footer>
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>

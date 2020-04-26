@@ -2609,6 +2609,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
+
 .btn-secondary {
   color: #fff;
   background-color: #6c757d;
@@ -4392,6 +4393,8 @@ input[type="button"].btn-block {
 .navbar-nav .dropdown-menu {
   position: static;
   float: none;
+  left: auto;
+  right: 0;
 }
 
 .navbar-text {
